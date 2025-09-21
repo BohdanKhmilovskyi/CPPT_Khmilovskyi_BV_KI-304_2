@@ -41,9 +41,18 @@ import java.util.Scanner;
 public class Lab1KhmilovskyiKI304 {
 
     /**
+     * Конструктор за замовчуванням.
+     * Ініціалізує об'єкт класу без параметрів.
+     */
+    public Lab1KhmilovskyiKI304() {
+    }
+
+    /**
      * Головний метод програми.
      * Зчитує розмір матриці та символ-заповнювач, формує зубчастий масив,
      * виводить його на консоль та записує у файл output.txt.
+     *
+     * @param args аргументи командного рядка (не використовуються у цій програмі)
      */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

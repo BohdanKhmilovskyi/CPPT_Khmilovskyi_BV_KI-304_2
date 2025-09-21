@@ -1,0 +1,1 @@
+tagSearchIndex = [{"l":"Приклад роботи:","h":"class Lab1KhmilovskyiKI304","d":"Section","u":"Lab1KhmilovskyiKI304.html#--heading"}];updateSearchResults();
