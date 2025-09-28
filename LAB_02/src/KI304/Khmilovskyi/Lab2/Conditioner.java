@@ -48,6 +48,7 @@ public class Conditioner {
         log("Кондиціонер створено (конструктор з параметрами)");
     }
 
+    // --- Методи кондиціонера ---
     public void turnOn() {
         motor.start();
         log("Кондиціонер увімкнено");
