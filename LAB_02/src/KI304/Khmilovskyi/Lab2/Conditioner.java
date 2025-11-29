@@ -12,7 +12,7 @@ import java.io.PrintWriter;
  * <p><b>Призначення:</b> ознайомлення з принципами ООП,
  * використання пакетів, конструкторів, методів та протоколювання.</p>
  *
- * @author
+ * @author Khmilovskyi KI-304
  * @version 1.0
  */
 public class Conditioner {
@@ -48,7 +48,7 @@ public class Conditioner {
         log("Кондиціонер створено (конструктор з параметрами)");
     }
 
-    // --- Методи кондиціонера ---
+    // Методи кондиціонера
     public void turnOn() {
         motor.start();
         log("Кондиціонер увімкнено");
@@ -80,9 +80,9 @@ public class Conditioner {
     }
 
     public void showStatus() {
-        String status = "Стан: мотор=" + motor.isRunning() +
-                ", температура=" + remote.getTemperature() +
-                ", фільтр=" + filter.getStatus();
+        String status = "Стан: мотор =" + motor.isRunning() +
+                ", температура =" + remote.getTemperature() +
+                ", фільтр =" + filter.getStatus();
         System.out.println(status);
         log("Отримано стан: " + status);
     }
@@ -102,13 +102,11 @@ public class Conditioner {
         logWriter.close();
     }
 
-    // --- Внутрішній метод для логування ---
     private void log(String message) {
         logWriter.println(message);
         logWriter.flush();
     }
 
-    // --- Допоміжні внутрішні класи ---
     public static class Motor {
         private boolean running;
         private String mode;

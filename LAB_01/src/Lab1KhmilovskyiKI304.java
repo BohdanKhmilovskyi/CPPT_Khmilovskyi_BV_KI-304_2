@@ -76,8 +76,10 @@ public class Lab1KhmilovskyiKI304 {
 
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < n; j++) {
-                    if ((i <= j && i + j < n) || (i >= j && i + j >= n - 1)) {
-                        array[i][j] = fill;
+                    if (i == 0 || i == n - 1) {
+                        array[i][j] = '#';
+                    } else if ((i <= j && i + j < n) || (i >= j && i + j >= n - 1)) {
+                        array[i][j] = '*';
                     } else {
                         array[i][j] = ' ';
                     }

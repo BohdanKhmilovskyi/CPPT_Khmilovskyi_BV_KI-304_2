@@ -10,7 +10,7 @@ public class ConditionerDriver {
             Conditioner conditioner = new Conditioner();
 
             conditioner.turnOn();
-            conditioner.setTemperature(20);
+            conditioner.setTemperature(20980909090979898980980);
             conditioner.decreaseTemp();
             conditioner.enableCooling();
             conditioner.showStatus();
